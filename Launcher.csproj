@@ -64,5 +64,11 @@
     <EmbeddedResource Include="Options.resx" />
     <EmbeddedResource Include="Properties\Resources.resx" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="LayoutContracts\LayoutContracts.csproj">
+      <Project>{F33E0A75-74AE-43F4-A894-42C60644792A}</Project>
+      <Name>LayoutContracts</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
