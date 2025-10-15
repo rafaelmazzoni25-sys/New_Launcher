@@ -1,0 +1,51 @@
+{
+  "Form": {
+    "ClientSize": [990, 560],
+    "Text": "MU Launcher"
+  },
+  "Controls": {
+    "Status": {
+      "Type": "Label",
+      "Location": [176, 503]
+    },
+    "StartButton": {
+      "Type": "PictureBox",
+      "Location": [840, 503],
+      "Size": [146, 53]
+    },
+    "ExitButton": {
+      "Type": "PictureBox",
+      "Location": [968, 3],
+      "Size": [18, 18]
+    },
+    "pictureBox3": {
+      "Type": "PictureBox",
+      "Location": [947, 3],
+      "Size": [18, 18]
+    },
+    "pictureBox4": {
+      "Type": "PictureBox",
+      "Location": [818, 541],
+      "Size": [16, 15]
+    },
+    "label1": {
+      "Type": "Label",
+      "Location": [760, 543]
+    },
+    "Captions": {
+      "Type": "Label",
+      "Location": [26, 3],
+      "Text": "MU Launcher"
+    },
+    "CopyRightLabel": {
+      "Type": "Label",
+      "Location": [108, 543],
+      "Text": "Coded by MyHeart (RZ)"
+    },
+    "webBrowser1": {
+      "Type": "WebBrowser",
+      "Location": [5, 23],
+      "Size": [979, 475]
+    }
+  }
+}

@@ -49,6 +49,33 @@ public class MainForm : Form
   {
     this.InitializeComponent();
     Globals.MainForm = this;
+    this.LoadExternalLayout();
+  }
+
+  private void LoadExternalLayout()
+  {
+    try
+    {
+      string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
+      string jsonLayoutPath = Path.Combine(baseDirectory, "layout.json");
+      string svgLayoutPath = Path.Combine(baseDirectory, "layout.svg");
+      if (File.Exists(jsonLayoutPath))
+      {
+        LayoutLoader.ApplyLayout((Form) this, jsonLayoutPath);
+      }
+      else if (File.Exists(svgLayoutPath))
+        LayoutLoader.ApplyLayout((Form) this, svgLayoutPath);
+    }
+    catch (Exception ex)
+    {
+      try
+      {
+        this.Status.Text = ex.Message;
+      }
+      catch
+      {
+      }
+    }
   }
 
   private void MainForm_Shown(object sender, EventArgs e)
